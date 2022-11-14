@@ -1,0 +1,7 @@
+CREATE TABLE countries 
+( 
+country_id varchar(3) , 
+country_name varchar(30) CHECK country_name IN ('Italy' , 'India' , 'China') , 
+region_id decimal(10,0)
+);
+
