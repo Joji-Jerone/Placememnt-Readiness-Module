@@ -1,0 +1,34 @@
+var total = prompt("Please enter total number of classes"); 
+var atten = prompt ("Please enter attended classes");
+
+if (confirm("Do you have a medical cause?"))  
+{ 
+  medical_cause = 'Y';
+} else  
+{ 
+medical_cause = 'N';
+} 
+
+if (medical_cause == 'Y')
+{
+        if(atten >= 60)
+        {
+        console.log("True")
+        }
+        else
+        {
+        console.log("False")
+        }
+ }
+else{
+        if (atten>=75)
+        {
+        console.log("True")
+        }
+        else
+        {
+        console.log("False")
+        }
+ }
+ 
+  
