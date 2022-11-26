@@ -1,0 +1,14 @@
+var array = [{ language: 'JavaScript' },{ language: 'JavaScript' },{ language: 'C++' },{ language: 'TypeScript' }];
+
+var countObject = {};
+
+array.forEach(item => {
+    Object.keys(item).forEach(key => {
+        if (item[key] === "true")
+            countObject[key] = countObject[key] + 1 || 1
+        else
+            countObject[key] = countObject[key] || 0
+    })
+})
+
+console.log(countObject); 
